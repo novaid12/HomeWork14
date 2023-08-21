@@ -17,6 +17,12 @@ class ThirdVC: UIViewController {
         labelText.text = dataString
     }
 
+    @IBAction func nextAction(_ sender: UIButton) {
+        let vc = FifthVC(nibName: "FifthVC", bundle: nil)
+        vc.dataString = "Hello from ThirdVC"
+        vc.navigationItem.title = "XIB VC"
+        navigationController?.pushViewController(vc, animated: true)
+    }
     @IBAction func backAction(_ sender: UIButton) {
         navigationController?.popViewController(animated: true)
     }

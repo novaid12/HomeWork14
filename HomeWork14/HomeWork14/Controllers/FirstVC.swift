@@ -9,9 +9,9 @@ import UIKit
 
 class FirstVC: UIViewController {
     @IBOutlet var labelText: UILabel!
+    var dataString: String?
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // Do any additional setup after loading the view.
     }
     

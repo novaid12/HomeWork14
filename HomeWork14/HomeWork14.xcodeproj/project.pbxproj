@@ -18,6 +18,8 @@
 		988476332A935EEC0020F6D6 /* FouthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988476322A935EEC0020F6D6 /* FouthVC.swift */; };
 		988476362A935F080020F6D6 /* ThirdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988476342A935F080020F6D6 /* ThirdVC.swift */; };
 		988476372A935F080020F6D6 /* ThirdVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 988476352A935F080020F6D6 /* ThirdVC.xib */; };
+		9884763E2A9384D70020F6D6 /* FifthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9884763C2A9384D70020F6D6 /* FifthVC.swift */; };
+		9884763F2A9384D70020F6D6 /* FifthVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9884763D2A9384D70020F6D6 /* FifthVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		988476322A935EEC0020F6D6 /* FouthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FouthVC.swift; sourceTree = "<group>"; };
 		988476342A935F080020F6D6 /* ThirdVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdVC.swift; sourceTree = "<group>"; };
 		988476352A935F080020F6D6 /* ThirdVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThirdVC.xib; sourceTree = "<group>"; };
+		9884763C2A9384D70020F6D6 /* FifthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthVC.swift; sourceTree = "<group>"; };
+		9884763D2A9384D70020F6D6 /* FifthVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FifthVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,9 +92,10 @@
 			isa = PBXGroup;
 			children = (
 				988476152A934A3D0020F6D6 /* Main.storyboard */,
-				988476352A935F080020F6D6 /* ThirdVC.xib */,
-				9884761A2A934A3F0020F6D6 /* LaunchScreen.storyboard */,
 				988476302A935E160020F6D6 /* SecondStoryboard.storyboard */,
+				988476352A935F080020F6D6 /* ThirdVC.xib */,
+				9884763D2A9384D70020F6D6 /* FifthVC.xib */,
+				9884761A2A934A3F0020F6D6 /* LaunchScreen.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -102,6 +107,7 @@
 				988476252A934FA80020F6D6 /* SecondVC.swift */,
 				988476342A935F080020F6D6 /* ThirdVC.swift */,
 				988476322A935EEC0020F6D6 /* FouthVC.swift */,
+				9884763C2A9384D70020F6D6 /* FifthVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -168,6 +174,7 @@
 				988476192A934A3F0020F6D6 /* Assets.xcassets in Resources */,
 				988476172A934A3D0020F6D6 /* Main.storyboard in Resources */,
 				988476372A935F080020F6D6 /* ThirdVC.xib in Resources */,
+				9884763F2A9384D70020F6D6 /* FifthVC.xib in Resources */,
 				988476312A935E160020F6D6 /* SecondStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -181,6 +188,7 @@
 			files = (
 				988476362A935F080020F6D6 /* ThirdVC.swift in Sources */,
 				988476142A934A3D0020F6D6 /* FirstVC.swift in Sources */,
+				9884763E2A9384D70020F6D6 /* FifthVC.swift in Sources */,
 				988476102A934A3D0020F6D6 /* AppDelegate.swift in Sources */,
 				988476262A934FA80020F6D6 /* SecondVC.swift in Sources */,
 				988476122A934A3D0020F6D6 /* SceneDelegate.swift in Sources */,

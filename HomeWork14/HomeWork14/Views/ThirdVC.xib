@@ -28,9 +28,17 @@
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oqa-1O-kDZ">
                     <rect key="frame" x="50" y="733" width="293" height="35"/>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="tinted" title="Close"/>
+                    <buttonConfiguration key="configuration" style="tinted" title="Назад"/>
                     <connections>
                         <action selector="backAction:" destination="-1" eventType="touchUpInside" id="Lfq-Ct-gld"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rgb-0N-gGG">
+                    <rect key="frame" x="50" y="648" width="293" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Далее"/>
+                    <connections>
+                        <action selector="nextAction:" destination="-1" eventType="touchUpInside" id="7uA-pn-jHE"/>
                     </connections>
                 </button>
             </subviews>
@@ -40,7 +48,10 @@
                 <constraint firstItem="4eh-n4-LKF" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="3BY-dX-hgx"/>
                 <constraint firstItem="oqa-1O-kDZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="6vr-rA-aQa"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="oqa-1O-kDZ" secondAttribute="bottom" constant="50" id="DMG-zf-kJY"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="rgb-0N-gGG" secondAttribute="trailing" constant="50" id="Rx4-Y8-zvs"/>
                 <constraint firstItem="4eh-n4-LKF" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="dA6-Od-lk6"/>
+                <constraint firstItem="oqa-1O-kDZ" firstAttribute="top" secondItem="rgb-0N-gGG" secondAttribute="bottom" constant="50" id="eig-W4-hRr"/>
+                <constraint firstItem="rgb-0N-gGG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="mgA-Pa-ctM"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="oqa-1O-kDZ" secondAttribute="trailing" constant="50" id="n5H-cc-lMw"/>
             </constraints>
             <point key="canvasLocation" x="-19" y="20"/>
