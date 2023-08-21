@@ -202,7 +202,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Go to VC by separetad Storyboard with segue and send Data"/>
                                         <connections>
-                                            <segue destination="OBC-Bf-5a7" kind="show" id="uP1-SY-Ifs"/>
+                                            <segue destination="OBC-Bf-5a7" kind="show" identifier="goToFouthVC" id="uP1-SY-Ifs"/>
                                         </connections>
                                     </button>
                                 </subviews>

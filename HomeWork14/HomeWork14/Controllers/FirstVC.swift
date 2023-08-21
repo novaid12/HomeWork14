@@ -22,7 +22,6 @@ class FirstVC: UIViewController {
     @IBAction func goToThirdVC(_ sender: UIButton) {
         let vc = ThirdVC(nibName: "ThirdVC", bundle: nil)
         vc.dataString = "Hello from FirstVC"
-        /// pushViewController
         vc.navigationItem.title = "XIB VC"
         navigationController?.pushViewController(vc, animated: true)
     }
@@ -35,10 +34,8 @@ class FirstVC: UIViewController {
         present(fouthVC, animated: true)
     }
 
-    
     @IBAction func unwindToFirstVC(_ unwindSegue: UIStoryboardSegue) {
         if let fouthVC = unwindSegue.source as? FouthVC {
-            labelText.text = fouthVC.dataString
             labelText.text = String(fouthVC.result)
         }
     }
