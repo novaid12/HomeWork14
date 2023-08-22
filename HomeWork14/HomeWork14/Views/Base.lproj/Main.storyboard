@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fpP-9c-ArB">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--FirstVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="FirstVC" customModule="HomeWork14" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="1Dd-2g-cAk">
+                                <rect key="frame" x="25" y="391.66666666666669" width="343" height="93.666666666666686"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIg-qI-5fP">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Show Modaly view"/>
+                                        <connections>
+                                            <segue destination="jY3-hV-slM" kind="presentation" id="ONF-Xy-JJR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngt-PR-h6F">
+                                        <rect key="frame" x="0.0" y="59.333333333333314" width="343" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Show modaly view fullscreen "/>
+                                        <connections>
+                                            <segue destination="jY3-hV-slM" kind="presentation" modalPresentationStyle="fullScreen" id="FJv-IG-hAE"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                        <constraints>
+                            <constraint firstItem="1Dd-2g-cAk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="GOn-cN-ryZ"/>
+                            <constraint firstItem="1Dd-2g-cAk" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="I2T-6O-ej0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1Dd-2g-cAk" secondAttribute="trailing" constant="25" id="U0B-5f-pXc"/>
+                            <constraint firstItem="1Dd-2g-cAk" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Ub2-Nd-s30"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="-2"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Q4Y-g4-r1i">
+            <objects>
+                <viewController id="jY3-hV-slM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NO0-EX-3hk">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="DZI-6H-ote"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="din-r1-2lY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Qw-2a-sQi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="920" y="-2"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="eZX-76-juj">
+            <objects>
+                <navigationController id="VuT-uG-A1G" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="EQW-Ax-Q6t">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="gXS-sb-9bC" kind="relationship" relationship="rootViewController" id="pdp-Qf-mHS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JwO-60-vzI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137" y="745"/>
+        </scene>
+        <!--FirstVC-->
+        <scene sceneID="vRP-Q3-bv4">
+            <objects>
+                <viewController id="gXS-sb-9bC" customClass="FirstVC" customModule="HomeWork14" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0b8-Wp-GGf">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="8wV-VX-Lje">
+                                <rect key="frame" x="25" y="413.66666666666669" width="343" height="93.666666666666686"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nbn-33-IjB">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Show NC Modaly view"/>
+                                        <connections>
+                                            <segue destination="Cr9-AO-eaz" kind="presentation" id="TUG-mD-bHy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZ9-yh-Dz9">
+                                        <rect key="frame" x="0.0" y="59.333333333333314" width="343" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Show NC modaly view fullscreen "/>
+                                        <connections>
+                                            <segue destination="Cr9-AO-eaz" kind="show" id="01G-nd-UWk"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1YA-Nj-5dz"/>
+                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                        <constraints>
+                            <constraint firstItem="8wV-VX-Lje" firstAttribute="leading" secondItem="1YA-Nj-5dz" secondAttribute="leading" constant="25" id="7xS-20-NrB"/>
+                            <constraint firstItem="8wV-VX-Lje" firstAttribute="centerX" secondItem="1YA-Nj-5dz" secondAttribute="centerX" id="dPE-5f-u3d"/>
+                            <constraint firstItem="8wV-VX-Lje" firstAttribute="centerY" secondItem="1YA-Nj-5dz" secondAttribute="centerY" id="eTM-ie-rDu"/>
+                            <constraint firstItem="1YA-Nj-5dz" firstAttribute="trailing" secondItem="8wV-VX-Lje" secondAttribute="trailing" constant="25" id="u4s-CQ-Pda"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="nBv-4W-DFG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nqK-Mv-Dbe" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1062" y="744"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Bl1-7X-hvS">
+            <objects>
+                <viewController id="Cr9-AO-eaz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dSb-La-uTR">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="hNJ-AS-Pcu"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="D4W-Dr-Rww"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jI2-NQ-Z06" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2015" y="744"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ArJ-Pa-UGt">
+            <objects>
+                <navigationController id="fpP-9c-ArB" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="M6J-ff-duu">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Hdw-tZ-L9Y" kind="relationship" relationship="rootViewController" id="Zp6-dl-JNE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a2y-tj-4gF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="1478"/>
+        </scene>
+        <!--FirstVC-->
+        <scene sceneID="EQx-er-Pg6">
+            <objects>
+                <viewController id="Hdw-tZ-L9Y" customClass="FirstVC" customModule="HomeWork14" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DxX-dD-V8h">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="6h2-TI-dDR">
+                                <rect key="frame" x="25" y="324.33333333333337" width="343" height="272.33333333333337"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7PD-5a-eIO">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="54.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Go to VC (modaly) by Segue and send Data"/>
+                                        <connections>
+                                            <action selector="goToNextView:" destination="Hdw-tZ-L9Y" eventType="touchUpInside" id="rGA-xR-RPb"/>
+                                            <segue destination="dv2-h5-fuO" kind="presentation" identifier="goToNextView" modalPresentationStyle="fullScreen" id="uBW-us-wG6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6CD-EH-UiE">
+                                        <rect key="frame" x="0.0" y="79.333333333333371" width="343" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Go to VC with XIB and send Data"/>
+                                        <connections>
+                                            <action selector="goToThirdVC:" destination="Hdw-tZ-L9Y" eventType="touchUpInside" id="A9J-q6-Jg6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tGd-uc-hCp">
+                                        <rect key="frame" x="0.0" y="138.66666666666669" width="343" height="54.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Go to VC by separetad Storyboard and send Data"/>
+                                        <connections>
+                                            <action selector="goToFourViewUnwind" destination="Hdw-tZ-L9Y" eventType="touchUpInside" id="Vqu-Rh-bo9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oLT-Sn-XZ0">
+                                        <rect key="frame" x="0.0" y="218.00000000000006" width="343" height="54.333333333333314"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Go to VC by separetad Storyboard with segue and send Data"/>
+                                        <connections>
+                                            <segue destination="OBC-Bf-5a7" kind="show" identifier="goToFouthVC" id="uP1-SY-Ifs"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zFa-Wn-bgC">
+                                <rect key="frame" x="50" y="153" width="293" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="SnN-DD-oJV"/>
+                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                        <constraints>
+                            <constraint firstItem="6h2-TI-dDR" firstAttribute="centerX" secondItem="SnN-DD-oJV" secondAttribute="centerX" id="1Sz-wB-iwJ"/>
+                            <constraint firstItem="SnN-DD-oJV" firstAttribute="trailing" secondItem="6h2-TI-dDR" secondAttribute="trailing" constant="25" id="Slt-Ov-qvj"/>
+                            <constraint firstItem="zFa-Wn-bgC" firstAttribute="leading" secondItem="SnN-DD-oJV" secondAttribute="leading" constant="50" id="XVW-bO-hF6"/>
+                            <constraint firstItem="6h2-TI-dDR" firstAttribute="leading" secondItem="SnN-DD-oJV" secondAttribute="leading" constant="25" id="fkl-es-Rtf"/>
+                            <constraint firstItem="SnN-DD-oJV" firstAttribute="trailing" secondItem="zFa-Wn-bgC" secondAttribute="trailing" constant="50" id="qmf-x3-DBg"/>
+                            <constraint firstItem="zFa-Wn-bgC" firstAttribute="top" secondItem="SnN-DD-oJV" secondAttribute="top" constant="50" id="xss-Gv-Kz1"/>
+                            <constraint firstItem="6h2-TI-dDR" firstAttribute="centerY" secondItem="SnN-DD-oJV" secondAttribute="centerY" id="yTa-BW-jkC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="SnS-V8-glu"/>
+                    <connections>
+                        <outlet property="labelText" destination="zFa-Wn-bgC" id="opJ-eg-UfG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fl6-mb-J4j" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1062" y="1477"/>
+        </scene>
+        <!--SecondStoryboard-->
+        <scene sceneID="1s4-3c-gkq">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SecondStoryboard" id="OBC-Bf-5a7" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="MT2-17-VzQ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u5s-bN-i9Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1855" y="1920"/>
+        </scene>
+        <!--SecondVC-->
+        <scene sceneID="1RI-QV-PLo">
+            <objects>
+                <viewController id="dv2-h5-fuO" customClass="SecondVC" customModule="HomeWork14" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="n87-Gk-hYt">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n8d-YW-mNk">
+                                <rect key="frame" x="150.33333333333334" y="405" width="92.333333333333343" height="42"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7n6-3e-hVs">
+                                <rect key="frame" x="50" y="767" width="293" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Close"/>
+                                <connections>
+                                    <action selector="closeButton:" destination="dv2-h5-fuO" eventType="touchUpInside" id="8tZ-rB-hc5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="R2m-d8-2TN"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="n8d-YW-mNk" firstAttribute="centerY" secondItem="R2m-d8-2TN" secondAttribute="centerY" id="45H-1K-4TG"/>
+                            <constraint firstItem="7n6-3e-hVs" firstAttribute="leading" secondItem="R2m-d8-2TN" secondAttribute="leading" constant="50" id="8la-l1-UMh"/>
+                            <constraint firstItem="R2m-d8-2TN" firstAttribute="trailing" secondItem="7n6-3e-hVs" secondAttribute="trailing" constant="50" id="FYi-Y4-qMU"/>
+                            <constraint firstItem="n8d-YW-mNk" firstAttribute="centerX" secondItem="R2m-d8-2TN" secondAttribute="centerX" id="XYf-0k-XIz"/>
+                            <constraint firstItem="R2m-d8-2TN" firstAttribute="bottom" secondItem="7n6-3e-hVs" secondAttribute="bottom" constant="50" id="hbX-kX-TDP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="bcB-1J-bLw"/>
+                    <connections>
+                        <outlet property="lblText" destination="n8d-YW-mNk" id="iBi-3c-ZfW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mWg-uN-oNE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1869" y="1485"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="TUG-mD-bHy"/>
+        <segue reference="FJv-IG-hAE"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
